@@ -1,5 +1,5 @@
 # Mobile_Wedding_Invitation
-Mobile wedding invitation for my wedding
+Mobile wedding invitation for my wedding (First Release 2017.10)
 
 # Language
 HTML</br>
