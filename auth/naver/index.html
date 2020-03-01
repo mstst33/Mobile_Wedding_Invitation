@@ -1,0 +1,91 @@
+<!doctype>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <style type="text/css">
+            html {
+                height: 100%;
+            }
+
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            #map_canvas {
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="map_canvas"></div>
+        <script type="text/javascript" src="http://openapi.map.naver.com/openapi/v3/maps.js?clientId=&submodules=geocoder&callback=initMap"></script>
+        <script type="text/javascript">
+            var map = null;
+            var HOME_PATH = window.HOME_PATH || '.';
+            var myaddress = '낙성대로3길 45';
+            var rlat = 0.0;
+            var rlon = 0.0;
+            var contentString = [
+                    '<div style="padding-left:2px; padding-right:2px font-size: 7px;">',
+                    '   <strong>서울 관악문화예절원</strong>',
+                    '   <p>서울시 관악구 낙성대로3길 45<br/>or 서울시 낙성대동 225번지</p>',
+                    '</div>'
+                ].join('');
+
+            function initMap() {
+                map = new naver.maps.Map('map_canvas', {
+                    zoom: 11,
+                    mapTypeControl : false
+                });
+
+                naver.maps.Service.geocode({address: myaddress}, function(status, response) {
+                    if (status !== naver.maps.Service.Status.OK) {
+                        // alert(myaddress + '의 검색 결과가 없거나 기타 네트워크 에러');
+                        rlat = result.items[0].point.y;
+                        rlon = result.items[0].point.x;
+                    }
+                    else
+                    {
+                        rlat = 37.4725291;
+                        rlon = 126.9598966;
+                    }
+
+                    var result = response.result;
+                    // 검색 결과 갯수: result.total
+                    // 첫번째 결과 결과 주소: result.items[0].address
+                    // 첫번째 검색 결과 좌표: result.items[0].point.y, result.items[0].point.x
+                    var myaddr = new naver.maps.LatLng(rlat, rlon);
+                    // var myaddr = new naver.maps.Point(result.items[0].point.y, result.items[0].point.x);
+                    map.setCenter(myaddr); // 검색된 좌표로 지도 이동
+                    // 마커 표시
+                    var marker = new naver.maps.Marker({
+                        position: myaddr,
+                        map: map
+                    });
+
+                    // 마크 클릭시 인포윈도우 오픈
+                    var infowindow = new naver.maps.InfoWindow({
+                      content: contentString
+                    });
+
+                    // 마커 클릭 이벤트 처리
+                    naver.maps.Event.addListener(marker, "click", function(e) {
+                        if (infowindow.getMap()) {
+                            infowindow.close();
+                        } else {
+                            infowindow.open(map, marker);
+                        }
+                    });
+
+                    infowindow.open(map, marker);
+                });
+            }
+        </script>
+    </body>
+</html>

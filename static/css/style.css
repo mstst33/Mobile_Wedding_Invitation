@@ -1,0 +1,214 @@
+﻿@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+* { box-sizing:border-box; font-family:'Nanum gothic'; }
+html, body { position: relative; height:100%; font-family:'Nanum Gothic'; }
+body {background: #eee; color:#000; margin: 0; padding: 0;}
+a { text-decoration:none; }
+a:hover { text-decoration:none; }
+
+img { max-width: 100%; height: auto; }
+
+textarea {
+	border:solid 1px #a4a6aa;
+	background:#fff;
+	font-size:20px;
+	padding:3px;
+	line-height:27px;
+	color:#333;
+	border-radius:10px;
+}
+
+strong { font-weight:800; }
+
+#wrapper { margin:0 auto; z-index:1; min-height:100%; }
+
+.swiper-container {
+    width: 100%;
+    height: 500px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.btn {
+	border-radius:10px;
+	border:none;
+	width:118px;
+	height:49px;
+	background:#3b3b3b;
+	color:white;
+	font-size:20px;
+	font-family:'Nanum Gothic';
+}
+
+div.titleBar { text-align:center; }
+div.titleBar>p { margin:1px 0; color:#7b6324; letter-spacing:-1px; font-size:15px; font-weight:bold; }
+div.titleBar>p.info { font-size:35px; letter-spacing:-3px; margin:20px 0; padding:0; color:black; font-weight:normal; }
+
+span.accountPictureType {
+	display:inline-block;
+	position:relative;
+	vertical-align:middle;
+}
+span.accountPictureType span.pictureHolder {
+	width:100px; height:100px; border-radius:67px; display:inline-block; vertical-align:middle; overflow:hidden; border:none; text-align:center;
+}
+
+i.accountType { display:block; width:40px; height:40px; background-position:center center; background-size:40px 40px; border-radius:25px; position:absolute; top:60px;left:70px; }
+i.accountType.facebook { background-image:url('/marriage/static/images/icons/facebook.small.png'); }
+i.accountType.kakao { background-image:url('/marriage/static/images/icons/kakao.small.png'); }
+
+span.username { color:#000000; font-weight:800; font-size:20px; padding:0 20px 0 13px; border-right:solid 4px white; }
+
+img.loginBtn { width:110px; height:110px; margin:0 15px; }
+div.accountInfo { width:100%; padding:5px; display:inline-block; vertical-align:middle;}
+img.profile_photo { background:white; width:100%; vertical-align:middle; }
+
+div.post {
+	padding:25px 15px;
+	position:relative;
+	width:100%;
+	border-bottom:solid 1px #ccc;
+	background:#fff;
+}
+div.author { 
+	display:inline-block;
+	vertical-align:middle;
+}
+div.author>span {
+	padding-left:15px;
+}
+span.date {
+	color:#ababab;
+	font-size:15px;
+}
+span.authorName {
+	font-size:30px;
+	font-weight:800;
+	color:#505050;
+}
+p.postContent { 
+	padding:13px 15px 0 15px;
+	margin-left:1em;
+	color:#666;
+	font-size:18px;
+	line-height:25px;
+}
+
+.writeForm {
+	overflow:hidden;
+	clear:both;
+}
+
+.writeForm textarea {
+	width:90%;
+	height:200px;
+	margin:0 auto;
+	padding:12px;
+	font-size:15px !important;
+	margin-bottom:12px;
+	font-family:'Nanum gothic' mono-space;
+	display:block;
+}
+
+.writeForm .btn {
+	margin-right:5%;
+	margin-bottom:25px;
+	float:right;
+	clear:both;
+}
+
+img.authorPicture { width:100%; vertical-align:middle; }
+
+
+.profile_info {
+	font-size:30px;
+	position:relative;
+}
+
+
+.btnLogout { color:#FFBB00; text-decoration:none; font-weight:bold; font-size:25px; margin-left:10px; position:relative; }
+a.btnLogout::after {
+	content:'>';
+	font-size:15px;
+	padding-left:5px;
+	display:inline-block;
+	position:absolute;
+	bottom:8px;
+}
+
+/** footer **/
+#footer { 
+	/*border-top:solid 1px #ccc;*/
+	background:transparent;
+	height:95px;
+	font-size:22px;
+	text-align:center;
+	line-height:95px;
+	color:black;
+	font-weight:bold;
+}
+
+#footer a {
+	color:black;
+}
+
+#footer>small {
+	font-size:22px;
+	color:#737373;
+}
+
+#mapArea
+{
+	margin: 0;
+	padding-bottom: 75%;
+	max-width: 90%;
+	height: 0;
+	position: relative;
+	overflow: hidden;
+	margin:0 auto;
+	border:solid 1px #4C4C4C;
+}
+
+#morebtn {
+	font-weight:bold;
+	width:200px;
+	height:70px;
+	border-radius:30px;
+	background:#fff;
+	color:#585015;
+	border:solid 1px #ccc;
+	font-size:30px;
+}
+
+#btnTrafficInfo {
+	font-weight:bold;
+	width:200px;
+	height:50px;
+	border-radius:30px;
+	background:#fff;
+	color:#4374D9;
+	border:solid 1px #ccc;
+	font-size:15px;
+}
+
+#traffic_info {
+	font-size:12px;
+	line-height:1.5em;
+	padding-left:10px;
+}

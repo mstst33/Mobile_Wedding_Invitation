@@ -1,0 +1,416 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="robots" content="noindex,noimageindex">
+        <meta name="mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="author" content="mstst33">
+		<meta name="description" content="저희 결혼합니다!">
+		<!--<meta http-equiv="Refresh" content="No-Cache">-->
+		
+		<title>기철♥윤지 결혼해요!</title>
+
+		<meta property="og:title" content="기철♥윤지 결혼해요!" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="http://mstst33.com/marriage/static/images/main_m.jpg" />
+		<meta property="og:url" content="http://mstst33.com/marriage/" />
+		<meta property="og:description" content="들어오셔서 축하해주세요 : )" />
+
+		<script type="text/javascript">
+			var $$ = function(oid){ var res = document.querySelectorAll(oid); return res.length==1?res[0]:res; }
+			var getJsonGet = function(url, params, cb){
+				var httpRequest;
+				// params = "req=aaa&req2=bbb";	
+
+				if (window.XMLHttpRequest) { // 모질라, 사파리등 그외 브라우저, ...
+				    httpRequest = new XMLHttpRequest();
+				} else if (window.ActiveXObject) { // IE 8 이상
+				    httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+				}
+
+				httpRequest.open('GET', url, true);
+				httpRequest.onreadystatechange = function(){
+					if(httpRequest.readyState == 4){
+						if(httpRequest.status == 200)
+						{
+							if(cb) cb(JSON.parse(httpRequest.responseText));
+						}
+					}
+				}
+				httpRequest.send(params);
+			}
+			
+			var getJsonPost = function(url, params, cb){
+				var httpRequest;
+				// params = "req=aaa&req2=bbb";
+
+				if (window.XMLHttpRequest) { // 모질라, 사파리등 그외 브라우저, ...
+				    httpRequest = new XMLHttpRequest();
+				} else if (window.ActiveXObject) { // IE 8 이상
+				    httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				
+				httpRequest.open('POST', url, true);
+				httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+				// httpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=UTF-8");
+				// httpRequest.setRequestHeader("Cache-Control","no-cache, must-revalidate");
+				// httpRequest.setRequestHeader("Pragma","no-cache");
+				
+				httpRequest.onreadystatechange = function(){
+					if(httpRequest.readyState == 4){
+						if(httpRequest.status == 200)
+						{
+							if(cb) cb(JSON.parse(httpRequest.responseText));
+						}
+					}
+				}
+				httpRequest.send(params);
+			}
+		</script>
+		<!--<link rel="shortcut icon" type="image/x-icon" href="/static/images/ico/">-->
+		<!--<link rel="stylesheet" href="/marriage/static/css/w3.css">-->
+		<link rel="stylesheet" type="text/css" href='/marriage/static/css/style.css?ver=1.1'></link>
+		<link rel="stylesheet" href="/marriage/static/css/swiper.min.css">
+	</head>
+	<body style="background-color:#f6f6f6;">
+		<div id="wrapper">
+			<style>
+				hr { width:100%; margin:1.0em 0; height:1px; border:none; border-top:solid 1px #ccc; }
+				.m_text { text-align:center; padding:2em; }
+				.m_text>div { opacity:0; font-size:16px; transform:translateY(-5px); -webkit-transform:translateY(-5px); line-height:1.5em; }
+				.m_text>div.show { opacity:1; transform:translateY(0); -webkit-transform:translateY(0); -webkit-transition:opacity 1s ease-out, -webkit-transform 1s ease-out; transition:opacity 1s ease-out, transform 1s ease-out; }
+				.m_text.bigger>div { font-size:22px; }
+				#footer { border-top:solid 1px #ccc; }
+			</style>
+			<div class="titleBar">
+				<p class="info">저희, <strong>결혼</strong>해요!</p>
+			</div>
+			<p style="text-align: center;"><img src="/marriage/static/images/main.jpg" /></p>
+			<div class="m_text bigger" style="text-align:center; padding-top:0.5em; padding-bottom:0;">
+				<div><strong>연인</strong>으로 지낸지 어언 3년,</div>
+				<div>이제 <strong>부부</strong>가 되려고 합니다.</div>
+			</div>
+			<div class="m_text" style="letter-spacing:-1px; padding:0; padding-top:.5em;" >
+				<div>
+					<hr />
+					<strong>박윤묵 · 윤정이</strong>&nbsp;&nbsp;의 장남&nbsp;&nbsp;<strong>박기철</strong> <br />
+					<strong>이성희 · 배영희</strong>&nbsp;&nbsp;의 장녀&nbsp;&nbsp;<strong>이윤지</strong> <br />
+					<hr />
+					<strong>일시</strong>&nbsp;&nbsp;|&nbsp;&nbsp;2017년 11월 4일 토요일 12시&nbsp;&nbsp;&nbsp; <br /><strong>장소</strong>&nbsp;&nbsp;|&nbsp;&nbsp;서울 <a href="http://gwanakcyw.or.kr" target="_blank" style="color:black; text-decoration:underline;">관악문화예절원</a><br />
+					<hr />
+					살기 좋은 집처럼 포근한 남편이 되겠습니다<br />
+					몸에 맞는 옷처럼 편안한 아내가 되겠습니다<br />
+					같은 하늘 아래 있음을 행복해하던<br />
+					저희 두 사람 이제 사랑으로<br />
+					함께 가는 길 축복의 박수로 격려해주십시오<br />
+					오늘도 좋은 하루 되세요
+				</div>
+			</div>
+			<div style="height:1.5em;"></div>
+			<script>
+				window.addEventListener('load', function(){
+					var texts = document.querySelectorAll('div.m_text>div');
+					for(var i=0,l=texts.length;i<l;i++){
+						setTimeout((function(){
+							var tmp = texts[i];
+							return function(){
+								tmp.classList.add('show');
+							}
+						})(), i*1000);
+					}
+				});
+			</script>
+			<div id="photoWrapper">
+				<!-- Slider main container -->
+				<div class="swiper-container">
+				    <!-- Additional required wrapper -->
+				    <div class="swiper-wrapper">
+				        <!-- Slides -->
+				        <div class="swiper-slide"><img src="/marriage/static/images/photos/img01.jpg" /></div>
+				        <div class="swiper-slide"><img src="/marriage/static/images/photos/img02.jpg" /></div>
+				        <div class="swiper-slide"><img src="/marriage/static/images/photos/img03.jpg" /></div>
+				        <div class="swiper-slide"><img src="/marriage/static/images/photos/img04.jpg" /></div>
+				        <div class="swiper-slide"><img src="/marriage/static/images/photos/img05.jpg" /></div>
+				        <div class="swiper-slide"><img src="/marriage/static/images/photos/img06.jpg" /></div>
+				        <div class="swiper-slide"><img src="/marriage/static/images/photos/img07.jpg" /></div>
+				    </div>
+				    <!-- If we need pagination -->
+				    <div class="swiper-pagination"></div>
+				    
+				    <!-- If we need navigation buttons -->
+				    <!-- <div class="swiper-button-prev"></div> -->
+				    <!-- <div class="swiper-button-next"></div> -->
+				    
+				    <!-- If we need scrollbar -->
+				    <!-- <div class="swiper-scrollbar"></div> -->
+				</div>
+			</div>
+			<div id="locationWrapper">
+				<div class="titleBar">
+						<p class="info"><strong>위치</strong></p>
+				</div>
+				<div id="mapArea"></div>
+				<div style="text-align:center; padding-top:10px; position:relative; width:100%;">
+					<button type="button" id="btnTrafficInfo">교통편 안내 (눌러서 보기)</button>
+				</div>
+				<div id="traffic_info">
+				</div>
+				<script type="text/javascript">
+					var showTraffic = false;
+					var traffic_content = [
+		                    '<div>',
+							'<pre>',
+							'<strong>▶ 지하철 ◀</strong>',
+							'(지하철 하차 후 도보로 오실 경우 약 15분 소요)',
+							'환승 : 2호선 낙성대역 4번 출구로 나와 GS주유소에서',
+							'	   좌회전 후 서울대 후문행 02번 마을버스 이용하여',
+							'	   낙성대공원(관악영어마을) 정류장에 하차하여',
+							'	   횡단보도 건너 낙성대공원 內 관악문화예절원',
+							'',
+							'<strong>▶ 버스 ◀</strong>',
+							'(2호선 낙성대 하차 후 마을버스 이용시 네 정류장 경유)',
+							'일반버스 : 5411, 5412, 5413, 461, 641번',
+							'		 시내버스 이용 후 02번 마을버스 환승',
+							'마을버스 : 낙성대역 4번출구로 나와 GS주유소에서',
+							'		 좌회전 후 장블랑제리 빵집 앞 정류장에서',
+							'		 02번 마을버스 타고 낙성대공원 (관악영어마을)',
+							'		 정류장에서 하차 <약 3 ~ 5분 소요>',
+							'',
+							'<strong>▶ 자가용 ◀</strong>',
+							'경부고속도로→서초 I.C→남부순환로→낙성대 입구에서',
+							'서울대 후문 방향으로 800m→낙성대공원內 관악문화예절원',
+							'',
+							'<strong>▶ 주차 ◀</strong>',
+							'관악구민 종합체육센터 주차장 및 서울시 과학전시관 주차장',
+							'</pre>',
+							'</div>'
+		                ].join('\n');
+						
+					function show_traffic_info()
+					{
+						if(showTraffic)
+						{
+							showTraffic = false;
+							document.getElementById("traffic_info").innerHTML = "";
+							document.getElementById("btnTrafficInfo").innerHTML = "교통편 안내 (눌러서 보기)";
+						}
+						else
+						{
+							showTraffic = true;
+							document.getElementById("traffic_info").innerHTML = traffic_content;
+							document.getElementById("btnTrafficInfo").innerHTML = "교통편 안내 (눌러서 닫기)";
+						}
+					}
+					
+					document.getElementById("mapArea").innerHTML = "<iframe id=\"nmap\" src=\"/marriage/auth/naver\" width=\"100%\" height=\"500px\" frameborder=\"0\" allowfullscreen></iframe>";
+					$$("#btnTrafficInfo").addEventListener('click', show_traffic_info);
+				</script>
+			</div>
+			<hr />
+			<div id="guestWrapper">
+				<div id="login_part">
+				</div>
+				<script type="text/javascript">
+					var login_id;
+					var login_type;
+					var login_name;
+					var login_img;
+					var profile_template_login = [
+		                    '<div class="accountInfo">',
+							'	<div class="titleBar">',
+							'		<p class="info"><strong>축하인사</strong> 남기기</p>',
+							'		<a href="/marriage/auth/kakao/"><img src="/marriage/static/images/icons/kakao.png" class="loginBtn" /></a>',
+							'		<a href="/marriage/auth/facebook/"><img src="/marriage/static/images/icons/facebook.png" class="loginBtn" /></a>',
+							'		<p>축하 인사를 남길 계정을 선택해 주세요</p>',
+							'	</div>',
+							'</div>',
+							'<div class="writeForm">',
+							'	<textarea style="width: 100%; name="content" placeholder="로그인 하신 후 축하 인사를 남길 수 있어요!" disabled="disabled"></textarea>',
+							'	<button id="postbtn" class="btn"  disabled="disabled" type="submit">남기기</button>',
+							'</div>'
+		                ].join('\n');
+
+		            var profile_template_loginned = [
+		            		'<div class="accountInfo">',
+							'	<div class="titleBar">',
+		            		'		<p class="info"><strong>축하인사</strong> 남기기</p>',
+							'		<div class="profile_info">',
+		                    '			<span class="accountPictureType">',
+		                    '				<span class="pictureHolder">',
+		                    '					<img src={{img}} class="profile_photo" />',
+		                    '				</span>',
+		                    '				<i class="accountType {{acctype}}"></i>',
+		                    '			</span>',
+							'			<span class="username">{{nickname}}</span>',
+							'			<a class="btnLogout" href="{{logout}}">Logout</a>',
+							'		</div>',
+							'		<p>축하 인사는 작성 후 수정 및 삭제가 안돼요!</p>',
+							'	</div>',
+							'</div>',
+							'<div class="writeForm">',
+							'	<form method="post" action="/marriage/post/post.php">',
+							'		<input id="post_id" type="text" name="id" value="" style="display:none;">',
+							'		<input id="post_name" type="text" name="nickname" value="" style="display:none;">',
+							'		<input id="post_img" type="text" name="img" value="" style="display:none;">',
+							'		<input id="post_acctype" type="text" name="acctype" value="" style="display:none;">',
+							'		<textarea style="width: 100%;" name="postdata" placeholder="축하 인사를 남겨주세요 ㄳㄳ"></textarea>',
+							'		<button id="postbtn" class="btn" type="submit">남기기</button>',
+							'	</form>',
+							'</div>'
+		                ].join('\n');
+
+		            var decodedURI = decodeURIComponent(location.href);
+					var tmp_json = decodedURI.split("?");
+					if(tmp_json.length > 1)
+					{
+						var loc_json = tmp_json[1].split("=");
+						if(loc_json[0]=='kakao')
+						{
+							var jsonObj = JSON.parse(loc_json[1]);
+							
+							window.location.href = '#guestWrapper';
+							login_id = jsonObj.id;
+							login_type = loc_json[0];
+							login_name = jsonObj.properties.nickname;
+							login_img = jsonObj.properties.profile_image;
+
+							replace_accountinfo(login_id, login_name, login_img, login_type, '/marriage/auth/kakao/logout');
+						}
+						else if(loc_json[0]=='facebook')
+						{
+							var jsonObj = JSON.parse(loc_json[1]);
+							
+							window.location.href = '#guestWrapper';
+							login_id = jsonObj.id;
+							login_type = loc_json[0];
+							login_name = jsonObj.name;
+							login_img = 'http://graph.facebook.com/' + jsonObj.id + '/picture?type=large';
+
+							replace_accountinfo(login_id, login_name, login_img, login_type, '/marriage/auth/facebook/logout');
+						}
+						else
+						{
+							document.getElementById('login_part').innerHTML = profile_template_login;
+						}
+					}
+					else
+					{
+						document.getElementById('login_part').innerHTML = profile_template_login;
+					}
+
+					function replace_accountinfo(id, name, img, acctype, logout_url)
+					{
+						var str_html = profile_template_loginned
+										.replace('{{id}}', id)
+										.replace('{{nickname}}', name)
+										.replace('{{img}}', img)
+										.replace('{{acctype}}', acctype)
+										.replace('{{logout}}', logout_url);
+
+						document.getElementById('login_part').innerHTML = str_html;
+					}
+
+					function input_postdata()
+					{
+						document.getElementById("post_id").value = login_id;
+						document.getElementById("post_name").value = login_name;
+						document.getElementById("post_img").value = login_img;
+						document.getElementById("post_acctype").value = login_type;
+					}
+
+					$$("#postbtn").addEventListener('click', input_postdata);
+				</script>
+				<div id="postList">
+				</div>
+				<div class="post" style="text-align:center;" id="morediv">
+					<button type="button" id="morebtn">더 보기</button>
+				</div>
+				<script type="text/javascript">
+					var cur_ptr = 0;
+					var from_i = 0;
+					var one_limit_post = 10;
+					var post_params = null;
+					var post_template = [
+		                    '<div class="post">',
+							'	<span class="accountPictureType">',
+							'		<span class="pictureHolder">',
+							'			<img src="{{img}}" class="authorPicture" />',
+							'		</span>',
+							'		<i class="accountType {{acctype}}"></i>',
+							'		</span>',
+							'	<div class="author"><span class="authorName">{{nickname}}</span><br /><span class="date">{{date}}</span></div>',
+							'	<p class="postContent">{{postdata}}</p>',
+							'</div>'
+		                ].join('\n');
+
+					function getMorePage(){
+						$$("#morebtn").disabled = 'disabled';
+						getJsonPost('/marriage/post/index.php', post_params, function(postjson){
+							var listhtml = [];
+							var onepost;
+							var template_str;
+							
+							from_i = cur_ptr;
+							if(one_limit_post < (postjson.list.length - cur_ptr))
+							{
+								cur_ptr += one_limit_post;
+								$$("#morebtn").removeAttribute('disabled');
+							}
+							else
+							{
+								cur_ptr += postjson.list.length - cur_ptr;
+								$$("#morediv").style.display = 'none';
+							}
+							
+							for(var i = from_i; i < cur_ptr; i++){
+								onepost = postjson.list[i];
+								if(onepost.img == "")
+								{
+									onepost.img = '/marriage/static/images/icons/none.png';
+								}
+								template_str = post_template
+											.replace('{{img}}', onepost.img)
+											.replace('{{nickname}}', onepost.nickname) // .replace(/</g, '&lt;') )
+											.replace('{{acctype}}', onepost.acctype)
+											.replace('{{date}}', onepost.date)
+											.replace('{{postdata}}', onepost.postdata); // .replace(/</g, '&lt;').replace(/\n/g, '<br />') );
+								listhtml.push(template_str);
+							}
+							
+							$$("#postList").innerHTML += listhtml.join('\n');
+						});
+					}
+					
+					getMorePage();
+					
+					$$("#morebtn").addEventListener('click', getMorePage);
+				</script>
+			</div>
+			<div id="footer">
+				<a href="http://mstst33.com">철이 <small>만듬</small>
+			</div>
+		</div>
+		<script src="/marriage/static/js/swiper.min.js"></script>
+		<!-- Initialize Swiper -->
+	    <script type="text/javascript">
+		    var swiper = new Swiper('.swiper-container', {
+		    	 // Optional parameters
+			    // direction: 'vertical',
+			    paginationClickable: true,
+		        loop: true,
+			    
+			    // If we need pagination
+			    pagination: '.swiper-pagination',
+			    
+			    // Navigation arrows
+			    // nextButton: '.swiper-button-next',
+			    // prevButton: '.swiper-button-prev',
+			    
+			    // And if we need scrollbar
+			    // scrollbar: '.swiper-scrollbar',
+		    });
+	    </script>
+	</body>
+</html>
